@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+[class*="__container"]{
+	max-width: 810px;
+	margin: 0 auto;
+}
+.page,
+.page-homework {
+    font-family: 'Lato', sans-serif;
+    color: rgb(66, 69, 81);
+    line-height: 160%;
+}
+.title {
+    font-weight: 900;
+    color: rgb(30, 33, 44);
+    font-size: 46px;
+    line-height: 130%;
+    margin: 92px 0 92px 0;
+}
+.image {
+    margin-bottom: 60px;
+}
+img {
+    border-radius: 4px;
+}
+.bold-text {
+    color: rgb(30, 33, 44);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+.paragraph-one {
+    margin-bottom: 35px;
+}
+.paragraph-two {
+    margin-bottom: 40px;
+}
+.quotes {
+    margin-bottom: 48px;
+}
+.text {
+    margin-bottom: 24px;
+}
+.items {
+    margin-bottom: 24px;
+}
+.item {
+    margin-bottom: 4px;
+}
+/**********************************************/
+
+.page-homework {
+}
+.page-homework__container {
+}
+.date-created {
+}
+.authors {
+}
+.author {
+}
+.co-author {
+}
+.content {
+}
+
+.main-block {
+    
+}
+.main-block__container {
+    
+}
+
+.block {
+    padding: 15px;
+    margin-bottom: 25px;
+}
+.block-one {
+    background-image: url(../img/cat1.jpg);
+    color: antiquewhite;
+}
+.block-two {
+    background-color: rgba(128, 128, 128, 0.772);
+}
+.block-three {
+    background: url(../img/cat2.jpg);
+    background-repeat: no-repeat;
+}
+.block-four {
+    min-height: 500px;
+    background: url(../img/cat3.jpg);
+    background-position: bottom right;
+    color: aliceblue;
+}
+.block-five {
+    
+    background: url(../img/Cat4.jpg);
+    background-attachment: fixed;
+}
+.block-six {
+    background: url(../img/Cat5.jpg);
+    background-size: 200px 200px;
+}
+.block-seven {
+    background: url(../img/cat6.jpg);
+    background-size: contain;
+}
+.block-eight {
+    min-height: 700px;
+    background: url(../img/cat7.jpg);
+    background-size: cover;
+}
