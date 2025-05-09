@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+[class*="__container"]{
+	max-width: 1250px;
+	margin: 0 auto;
+}
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.about {
+	font-family: "Roboto";
+}
+.about__container {
+	background-color: #666;
+	padding: 40px;
+}
+.about__transform {
+}
+.transform {
+	color: #ffffff;
+}
+.trasform__title {
+	font-weight: 900;
+	font-size: 40px;
+	margin-bottom: 80px;
+}
+.transform__block {
+}
+.content {
+	position: relative;
+}
+.content__block {
+}
+.content__title {
+	font-weight: 700;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+.general-property {
+	width: 150px;
+	height: 150px;
+	transition: 0.8s;
+	margin-bottom: 40px;
+	/*Свойство perspective-origin + perspective*/
+	perspective-origin: center center;
+    perspective: 400px;
+	/*Свойство transform-style*/
+	transform-style: preserve-3d;
+	position: relative;
+}
+.general-property p{
+	position: absolute;             
+   	top: 50%;
+	left: 50%;                       
+   	transform: translate(-50%,-50%);
+	padding: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-right: -50%;
+}
+.content__translate {
+	transform: translate(0, 0);
+}
+.content__translate p{
+}
+.content__translate:hover {
+	transform: translate(0px, 30px);
+}
+.content__text {
+	margin-bottom: 80px;
+}
+
+.content__scale {
+	transform: scale(1);
+}
+.content__scale:hover {
+	transform: scale(1.25);
+
+}
+.content__rotate {
+	transform: rotate(0deg);
+}
+.content__rotate:hover {
+	transform: rotate(20deg);
+}
+.content__skew {
+	transform: skew(0deg, 0deg);
+}
+.content__skew:hover {
+	transform: skew(-15deg, 0deg);
+}
+.content__matrix {
+	transform: matrix(0, 1, 1, 0, 0, 0);
+}
+.content__matrix:hover {
+	transform: matrix(0, -1, -1, 0, 0, 0);
+}
+.content__2d-transformation {
+	transform: translate(0, 0) scale(1) rotate(0deg) skew(0deg, 0deg);
+}
+.content__2d-transformation:hover {
+	transform: translate(15px, 0) scale(1.20) rotate(-10deg) skew(0deg, 5deg);
+}
+.content__transform-origin {
+	transform-origin: 0 0;
+	transform: rotate(0deg);
+}
+.content__transform-origin:hover {
+	transform-origin: 0 0;
+	transform: rotate(-15deg);
+}
+.content__perspective {
+}
+.content__perspective:hover {
+	transform: rotateX(45deg);
+}
+.content__translate3d {
+	transform: translate3d(0px, 0px, 0px);
+}
+.content__translate3d:hover {
+	transform: translate3d(-20px, 30px, 30px);
+}
+.content__scale3d {
+	transform: scale3d(1,1,1);
+}
+.content__scale3d:hover {
+	transform: scale3d(1.25,1,1);
+}
+.content__rotate3d {
+}
+.content__rotate3d:hover {
+	/*Значения: X, Y, Z;*/
+	transform: rotate3d(15, -10, 10, 30deg);
+}
+.content__matrix3d {
+	transform: matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n);
+}
+.content__3d-trasformation {
+	transform: translate(0px, 0px) scale(1) rotate(0deg) skew(0deg, 0deg);
+}
+.content__3d-trasformation:hover {
+	transform: translate(20px, 20px) scale(1.15) rotate(-15deg) skew(20deg, 0deg);
+}
+.content__transform-style {
+	transform: rotateX(0deg);
+	transition: all 0.8s ease 0s;
+}
+.content__transform-style:hover {
+	transform: rotateX(180deg);
+}
+.content__connect-backface {
+	position: relative;
+}
+.content__backface-visibility--bv-front {
+	transform: rotateY(0deg);
+	background-color: rgb(255, 204, 0);
+	z-index: 2;
+}
+.content__backface-visibility--bv-back {
+	transform: rotateY(0deg);
+	background-color: brown;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.content__backface-visibility--bv-front:hover {
+	transform: rotateY(-180deg);
+	visibility: hidden;
+	opacity: 0;
+}
+.content__backface-visibility--bv-back:hover {
+	transform: rotateY(-180deg);
+	visibility: visible;
+	opacity: 1;
+}
+.content__backface-visibility {
+	
+}
+.content__backface-visibility:hover {
+}
+.bg--red {
+	background-color: brown;
+}
+.bg--purple {
+	background-color: rgb(77, 0, 113);
+}
+.bg--yellow {
+	background-color: rgb(255, 204, 0);
+}

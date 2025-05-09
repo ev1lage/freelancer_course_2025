@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Transform</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <div class="about">
+           <div class="about__container">
+               <div class="about__transform transform">
+                  <h1 class="trasform__title">CSS Transform</h1>
+                  <div class="transform__block content">
+                     <div class="content__block">
+                        <h3 class="content__title">Translate (x, y)</h3>
+                        <div class="content__translate general-property bg--red"><p>Translate</p></div>
+                        <div class="content__text">
+                           <p>
+                              Translate - сдвигает элемент на новое место, перемещая относительно изначального положения объекта вправо и вниз, используя координаты X и Y. Записывается следующим образом translate (x, y);
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Scale (x, y)</h3>
+                        <div class="content__scale general-property bg--purple"><p>Scale</p></div>
+                        <div class="content__text">
+                           <p>
+                              Scale - масштабирует элементы, делая их больше или меньше. По умолчанию значения указаны как единица (1) - это реальный размер объекта. Первое значение масштабирует элемент по ширине, второе — по высоте. Отрицательные значения отображают элемент зеркально.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Rotate (n + deg)</h3>
+                        <div class="content__rotate general-property bg--yellow"><p>Rotate</p></div>
+                        <div class="content__text">
+                           <p>
+                              Rotate - поворачивает элементы на заданное количество градусов, отрицательные значения поворачивают элемент против часовой стрелки, положительные — по часовой стрелке. Записываются значения как градус поворота и deg
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Skew (x + deg, y + deg)</h3>
+                        <div class="content__skew general-property bg--red"><p>Skew</p></div>
+                        <div class="content__text">
+                           <p>
+                              Skew - деформирует (искажает) стороны объекта относительно координатных осей. Если указано одно значение, второе будет определено браузером автоматически. Записываются значения как градус поворота и deg
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Matrix (a, c, b, d, x, y)</h3>
+                        <div class="content__matrix general-property bg--purple"><p>Matrix</p></div>
+                        <div class="content__text">
+                           <p>
+                              Matrix (a, c, b, d, x, y) - позволяет объединить несколько функций 2D-трансформаций в одной. В качестве трансформации допустимы поворот, масштабирование, наклон (деформация) и изменение положения. Свойства указываются без единиц измерения.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Множественные 2D трансформации</h3>
+                        <div class="content__2d-transformation general-property bg--yellow"><p>translate, scale, rotate</p></div>
+                        <div class="content__text">
+                           <p>
+                              Так же, подобного можно добиться используя множественные трансформации. А именно записать несколько значений в одно свойство transform.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Trasform-origin</h3>
+                        <div class="content__transform-origin general-property bg--red"><p>Trasform-origin</p></div>
+                        <div class="content__text">
+                           <p>
+                              Transform-origin - позволяет сместить центр трансформации, относительно которого происходит изменение положения/размера/формы элемента
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Perspective, perspective-origin</h3>
+                        <div class="content__perspective general-property bg--purple"><p>Perspective, perspective-origin</p></div>
+                        <div class="content__text">
+                           <p>
+                              Perspective, perspective-origin - установка глубины и смена точки начала координат
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Translate3d (x, y, z)</h3>
+                        <div class="content__translate3d general-property bg--yellow"><p>Translate3d</p></div>
+                        <div class="content__text">
+                           <p>
+                              Translate-3D - по аналогии со своим 2D братом это значение задает перемещение элемента, но, в 3D-пространстве. Помимо оси X и Y добавляется ось Z.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Scale3d (x, y, z)</h3>
+                        <div class="content__scale3d general-property bg--red"><p>Scale3d</p></div>
+                        <div class="content__text">
+                           <p>
+                              Scale-3D - задает трехмерное масштабирование по одной из осей X, Y, Z
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Rotate3d (x, y, z, deg)</h3>
+                        <div class="content__rotate3d general-property bg--purple"><p>Rotate3d</p></div>
+                        <div class="content__text">
+                           <p>
+                              Rotate-3d - вращает элемент относительно трех осей. Элемент поворачивается под углом, задаваемым последним параметром относительно вектора направления X, Y, Z
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Matrix3d (n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</h3>
+                        <div class="content__matrix3d general-property bg--yellow"><p>Matrix3d</p></div>
+                        <div class="content__text">
+                           <p>
+                              Matrix-3d - задает трехмерное преобразование как однородную матрицу размером 4×4 с шестнадцатью значениями в столбцах
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Множественные 3D трансформации</h3>
+                        <div class="content__3d-trasformation general-property bg--red"><p>translate3d, rotate3d</p></div>
+                        <div class="content__text">
+                           <p>
+                              Запись нескольких 3D значений в одно свойство transform.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Transform-style</h3>
+                        <div class="content__transform-style general-property bg--purple"><p>Transform-style</p></div>
+                        <div class="content__text">
+                           <p>
+                              Transform-style - задает стиль трансформации
+                           </p>
+                        </div>
+                     </div>
+                     <div class="content__block">
+                        <h3 class="content__title">Backface-visibility</h3>
+                        <div class="content__connect-backface">
+                           <div class="general-property content__backface-visibility content__backface-visibility--bv-front"><p>Front</p></div>
+                           <div class="general-property content__backface-visibility content__backface-visibility--bv-back"><p>Back</p></div>
+                        </div>
+                        <div class="content__text">
+                           <p>
+                              Свойство определяет, будет ли видна пользователю обратная сторона элемента.
+                           </p>
+                        </div>
+                     </div>
+                  </div>  
+               </div>
+           </div>
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+
+</html> 
