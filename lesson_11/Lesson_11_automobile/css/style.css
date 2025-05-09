@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+[class*="__container"]{
+	max-width: 1250px;
+	margin: 0 auto;
+}
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+.car {
+	margin-top: 300px;
+}
+.car__container {
+}
+/*Кузов*/
+.car__body {
+	background-color: red;
+	border-radius: 100px 70px 40px 40px;
+	width: 450px;
+	height: 150px;
+	margin: 0 auto;
+}
+/*Колеса*/
+.car__wheels {
+}
+/*Шины*/
+.car__tires {
+}
+.tire--one {
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	top: 400px;
+	left: 680px;
+	width: 80px;
+	height: 80px;
+	z-index: 98;
+}
+.tire--two {
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	top: 400px;
+	left: 950px;
+	min-width: 80px;
+	min-height: 80px;
+	z-index: 98;
+}
+/*Диски*/
+.car__disks {
+}
+.disk--one {
+	border-radius: 50%;
+	background-color: grey;
+	position: absolute;
+	top: 409px;
+	left: 689px;
+	width: 60px;
+	height: 60px;
+	z-index: 98;
+}
+.disk--two {
+	border-radius: 50%;
+	background-color: grey;
+	position: absolute;
+	top: 409px;
+	left: 959px;
+	width: 60px;
+	height: 60px;
+	z-index: 98;
+}
+/*Фары*/
+.car__headlights {
+}
+.front-headlight {
+	border-radius: 120px 25px 25px 25px;
+	background-color: orange;
+	position: absolute;
+	top: 340px;
+	left: 633px;
+	width: 45px;
+	height: 40px;
+}
+.back-headlight {
+	border-radius: 30px 70px 30px 30px;
+	background-color: orange;
+	position: absolute;
+	top: 320px;
+	left: 1040px;
+	width: 33px;
+	height: 35px;
+}
+/*Крыша*/
+.car__roof {
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	top: 225px;
+	left: 730px;
+	width: 280px;
+	height: 210px;
+}
+/*Стекла*/
+.car__glass {
+	border-radius: 50%;
+	background-color: rgb(48, 158, 255);
+	position: absolute;
+	top: 235px;
+	left: 750px;
+	width: 240px;
+	height: 180px;
+}
+.car__doors {
+	background-color: red;
+	width: 250px;
+	height: 100px;
+	position: absolute;
+	top: 318px;
+	left: 750px;
+	z-index: 97;
+}
+.car__line {
+	background-color: red;
+	width: 10px;
+	height: 100px;
+	position: absolute;
+	top: 230px;
+	left: 890px;
+	z-index: 99;
+}
