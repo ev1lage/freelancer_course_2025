@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+[class*="__container"]{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+	background-color: #adadad;
+}
+.page {
+}
+.page__container {
+	
+}
+.newton {
+	position: relative;
+	height: 500px;
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+.newton::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: #562e00;
+	height: 25px;
+	width: 500px;
+	z-index: 2;
+}
+.newton__items {
+}
+.newton__item {
+	position: absolute;
+	top: 0;
+	width: 33.333%;
+	height: 100%;
+	transform-origin: top;
+}
+.newton__item::before {
+	content: "";
+	height: 100%;
+	width: 10px;
+	background-color: #313131;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.newton__item::after {
+	content: "";
+	width: 150px;
+	height: 150px;
+	background: radial-gradient(circle, rgba(217,217,217,1) 0%, rgba(0,0,0,1) 90%);
+	border-radius: 50%;
+	position: absolute;
+	bottom: -40px;
+	left: 5%;
+}
+.newton__item:nth-child(1) {
+	left: 10px;
+	animation: left-item 1s linear infinite alternate running 3.0s none;
+	/*1-имя обьекта; 2-продолжительность; 3-сценарий; 4-повторение;
+	5-направленеи и тип; 6-старт и стоп; 7-задержка; 8- */
+}
+.newton__item:nth-child(2) {
+	left: 33.333%;
+	animation: central-item 1s linear infinite alternate running 3.0s none;
+}
+.newton__item:nth-child(3) {
+	right: 10px;
+	animation: right-item 1s linear infinite alternate running 3.0s none;
+}
+@keyframes left-item {
+	0% {
+		transform: rotate(40deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+@keyframes central-item {
+	0% {
+		transform: rotate(-1deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(1deg);
+	}
+}
+@keyframes right-item {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-40deg);
+	}
+}
