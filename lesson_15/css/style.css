@@ -270,6 +270,7 @@ body {
 .about__image {
 	display: flex;
 	flex: 0 1 50%;
+	flex-wrap: wrap;
 }
 .about__image img {
 	border-radius: 4px;
