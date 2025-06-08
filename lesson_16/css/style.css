@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+[class*="__container"]{
+	max-width: 810px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+body {
+	background: gray;
+}
+.page {
+	padding: 150px;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+.form {
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 20px;
+}
+.form__line:not(:last-child) {
+	margin-bottom: 25px;
+}
+.form__label {
+	display: inline-block;
+	margin: 0 0 10px 10px;
+}
+.form__input {
+	padding: 15px;
+	color: #000;
+	border-radius: 10px;
+}
+/* Звертаємось до placeholder */
+.form__input::placeholder{
+	color: #dda0dd;
+}
+/* Тег input при фокусі (активний) */
+.form__input:focus {
+	outline: 3px solid #dda0dd;
+}
+
+/*-------- Кастомний чекбокс --------*/
+.checkbox {
+	position: relative;
+}
+.checkbox__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.checkbox__input:checked + .checkbox__label::before {
+	background: #dda0dd url('../img/check.svg') center / 70% no-repeat;
+}
+.checkbox__label {
+	cursor: pointer;
+	display: inline-flex;
+	gap: 10px;
+}
+.checkbox__label::before {
+	content: "";
+	flex: 0 0 30px;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: brown;
+}
+.checkbox__text {
+	align-self: center;
+}
+/*-----------------------------------------------*/
+.form__title {
+	margin-bottom: 15px;
+}
+.form__input_radio,
+.form__input_chk{
+	width: auto;
+	vertical-align: middle;
+}
+
+.form__button {
+	padding: 15px 30px;
+	border-radius: 10px;
+	border: 3px solid #df9adf;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: #fabdfa;
+	transition: background 0.3s ease-in-out;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+.form__button:hover {
+	background: #df9adf;
+} 
+.form__textarea {
+	height: 150px;
+	width: 100%;
+	padding: 15px;
+}

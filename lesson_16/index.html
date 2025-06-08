@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>...</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <div class="page__container">
+            <!-- Приклади -->
+            <form class="form" action="https://jsonplaceholder.typicode.com/posts"
+            method="POST" enctype="multipart/form-data">
+               <div class="form__line">
+                  <label class="form__label" for="name">Write login</label>
+                  <input class="form__input" id="name" type="text" required
+                  autocomplete="off" name="name" placeholder="Write login">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="pass">Write password</label>
+                  <input class="form__input" id="pass" type="password" required
+                  autocomplete="off" name="pass" placeholder="Write password">
+               </div>
+               <div class="form__line">
+                  <!-- Кастомний чекбокс -->
+                  <div class="checkbox">
+                     <input class="checkbox__input" id="sex" autocomplete="off" type="checkbox" name="sex" value="yes">
+                     <label class="checkbox__label" for="sex"><span class="checkbox__text">You want sex ?</span></label> 
+                  </div>
+               </div>
+               <div class="form__line">
+                  <select multiple name="list">
+                     <option value="1">Item 1</option>
+                     <option value="2">Item 2</option>
+                     <option value="3">Item 3</option>
+                     <option value="4">Item 4</option>
+                     <option value="5">Item 5</option>
+                     <option value="6">Item 6</option>
+                     <option value="7">Item 7</option>
+                     <option value="8">Item 8</option>
+                     <option value="9">Item 9</option>
+                     <option value="10">Item 10</option>
+                  </select>
+               </div>
+               <div class="form__line">
+                  <div class="form__title">Your favorite pose:</div>
+                  <!--Cheked в input делает выбранным-->
+                  <div class="form__radio">
+							<input class="form__input form__input_radio" id="pose-1" required autocomplete="off" value="missionary" name="pose" type="radio">
+							<label class="form__label" for="pose-1">Missionary</label>
+						</div>
+						<div class="form__radio">
+							<input class="form__input form__input_radio" id="pose-2" required autocomplete="off" value="doggy_style" name="pose" type="radio">
+							<label class="form__label" for="pose-2">Doggy style</label>
+						</div>
+                  <div class="form__radio">
+							<input class="form__input form__input_radio" id="pose-3" required autocomplete="off" value="rider_girl" name="pose" type="radio">
+							<label class="form__label" for="pose-3">Rider girl</label>
+						</div>
+               </div>
+               <div class="form__line">
+                  <button type="submit" class="form__button">send</button>
+                  <input type="hidden" value="hidden" name="iam-hidden">
+               </div>
+            </form>
+         
+            <form class="form" action="#" method="POST" enctype="multipart/form-data">
+               <div class="form__line">
+                  <!-- Тип text - Однорядковий ввід даних-->
+                  <label for="age-01">Write age</label>
+                  <input id="age-01" type="text" class="form__input" required autocomplete="off" name="age" placeholder="Write age">
+               </div>
+               <div class="form__line">
+                  <!-- Тип email - Однорядковий ввід поштової адреси -->
+                  <label class="form__label" for="email-01">Write email</label>
+                  <input class="form__input" id="email-01" type="email" required
+                  autocomplete="off" name="mail" placeholder="Write email">
+               </div>
+               <div class="form__line">
+                  <!-- Тип hidden - Приховане поле. Використовується разом з value -->
+                  <input class="form__input" name="token" value="token" type="hidden">
+               </div>
+               <div class="form__line">
+                  <!-- Тип tel - поле вводу телефонного номеру -->
+                  <label class="form__label" for="tel-01">Write tel</label>
+                  <input class="form__input" id="tel-01" type="tel" required
+                  autocomplete="off" name="phone" placeholder="Write tel">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="pass">Write password</label>
+                  <input class="form__input" id="pass" type="password" required
+                  autocomplete="off" name="pass" placeholder="Write password">
+               </div>
+               <div class="form__line">
+                  <!-- Тип number - поле вводу числа -->
+                  <label class="form__label" for="num-01">Write number</label>
+                  <input class="form__input" id="num-01" autocomplete="off" placeholder="Write number" name="num" type="number">
+               </div>
+               <div class="form__line">
+                  <!-- Тип color - поле вибору кольору --> 
+                  <input class="form__input" type="color" required
+                  autocomplete="off" name="col">
+               </div>
+               <div class="form__line">
+                  <!-- Тип search - поле вибору пошуку -->
+                  <label class="form__label" for="srch-01">search</label>
+                  <input class="form__input" id="srch-01" type="search" required
+                  autocomplete="off" name="search" placeholder="search">
+               </div>
+               <div class="form__line">
+                  <!-- Тип search - поле вибору дати -->
+                  <label class="form__label" for="date-01">date</label>
+                  <input class="form__input" id="date-01" type="date" required
+                  autocomplete="off" name="date" placeholder="date">
+               </div>
+               <div class="form__line">
+						<!-- Тип range - поле вибору значення -->
+						<input class="form__input" autocomplete="off" name="range" type="range">
+					</div>
+
+               <!-- Тип checkbox - множинний вибір -->
+               <div class="form__line">
+						<input id="mom-01" class="form__input form__input_chk" required autocomplete="off" name="mom" type="checkbox">
+						<label class="form__label" for="mom-01">Кіт ти маму мав ?</label>
+					</div>
+					<div class="form__line">
+						<input id="dad-01" checked class="form__input form__input_chk" required autocomplete="off" name="dad" type="checkbox">
+						<label class="form__label" for="dad-01">А батька мав ?</label>
+					</div>
+               <div class="form__line">
+						<input id="bro-01" class="form__input form__input_chk" required autocomplete="off" name="bro" type="checkbox">
+						<label class="form__label" for="bro-01">А брата мав ?</label>
+					</div>
+                <div class="form__line">
+                  <!-- Кастомний чекбокс одиночний вибір -->
+                  <div class="checkbox">
+                     <input class="checkbox__input" id="sex" autocomplete="off" type="checkbox" name="sex" value="yes">
+                     <label class="checkbox__label" for="sex"><span class="checkbox__text">You want water ?</span></label> 
+                  </div>
+               </div>
+               <div class="form__line">
+                  <!-- Кастомний чекбокс одиночний вибір -->
+                  <div class="checkbox">
+                     <input checked class="checkbox__input" id="sex" autocomplete="off" type="checkbox" name="sex" value="yes">
+                     <label class="checkbox__label" for="sex"><span class="checkbox__text">You want sex ?</span></label> 
+                  </div>
+               </div>
+               <div class="form__line">
+						<!-- Тип file - додати файл (файли) 
+							Атрибут multiple - додавання групи файлів
+							Атрибут accept - фільтрує формати файлів
+						-->
+						<input class="form__input" name="file" accept="image/png, image/jpeg" multiple type="file">
+					</div>
+               <div class="form__line">
+						<!-- Тип file - додати файл (файли) 
+							Атрибут multiple - додавання групи файлів
+							Атрибут accept - фільтрує формати файлів
+						-->
+						<input class="form__input" name="file" multiple type="file">
+					</div>
+               <div class="form__line">
+                  <textarea class="form__textarea" name="message" autocomplete="off"></textarea>
+               </div>
+               <div class="form__line">
+						<!--
+							Тег  select - випадаючій список
+							Атрибут multiple
+							Тег option - елемент списку
+							Атрибут selected - вибраний за замовченням
+						 -->
+						<select name="list">
+							<option value="1">Пункт 1</option>
+							<option value="2">Пункт 2</option>
+							<option value="3">Пункт 3</option>
+							<option value="4">Пункт 4</option>
+							<option value="5">Пункт 5</option>
+						</select>
+					</div>
+					<div class="form__line">
+						<!-- button - Кнопка 
+							type="button" - кнопка нічого не робить :)
+							type="reset" - обнуляє (скидає) поля вводу у формі
+							type="submit" - відправляє форму
+						-->
+						<button class="form__button" type="submit">Button</button>
+					</div>
+            </form>
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+
+</html>
