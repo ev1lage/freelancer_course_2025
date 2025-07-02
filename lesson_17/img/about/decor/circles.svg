@@ -1,0 +1,16 @@
+<svg width="287.000000" height="287.000000" viewBox="0 0 287 287" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2234_9664">
+			<rect id="circles" width="287.000000" height="287.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g opacity="0.120000" style="mix-blend-mode:multiply">
+		<g clip-path="url(#clip2234_9664)">
+			<path id="Vector" d="M143.59 0C64.21 0 0 64.21 0 143.59C0 222.78 64.21 287.19 143.59 287.19C222.78 287.19 287.19 222.98 287.19 143.59C287 64.21 222.78 0 143.59 0ZM143.59 277.93C69.33 277.93 9.25 217.86 9.25 143.59C9.25 69.33 69.33 9.25 143.59 9.25C217.86 9.25 277.93 69.33 277.93 143.59C277.93 217.66 217.66 277.93 143.59 277.93Z" fill="#FFCF2D" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M143.6 30.92C81.55 30.92 31.12 81.35 31.12 143.4C31.12 205.45 81.55 255.87 143.6 255.87C205.64 255.87 256.07 205.64 256.07 143.59C256.07 81.35 205.64 30.92 143.6 30.92ZM143.6 238.74C91 238.74 48.26 195.99 48.26 143.4C48.26 90.8 91 48.06 143.6 48.06C196.19 48.06 238.93 90.8 238.93 143.4C238.93 195.99 196.19 238.74 143.6 238.74Z" fill="#FFCF2D" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>
